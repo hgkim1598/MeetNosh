@@ -28,8 +28,10 @@ import Sidebar from './components/Sidebar.vue';
 }
 
 .content {
-  flex: 1;
+  margin-left: 250px;
+  padding-top: 60px;
   padding: 16px;
+  flex: 1;
   overflow: auto;
 }
 </style>
