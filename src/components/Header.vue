@@ -4,7 +4,7 @@
 
 <template>
     <header class="header">
-        <h1>MeetNosh</h1>
+        <h1><a href="/">MeetNosh</a></h1>
     </header>
 </template>
 

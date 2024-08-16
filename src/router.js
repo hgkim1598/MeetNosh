@@ -9,12 +9,12 @@ const routes = [
     {
         path: '/meet',
         name: 'Meet',
-        component: () => import("@/pages/meetnosh/Meet.vue")
+        component: () => import("@/pages/meetnosh/Meet/index.vue")
     },
     {
         path: '/nosh',
         name: 'Nosh',
-        component: () => import("@/pages/meetnosh/Nosh.vue")
+        component: () => import("@/pages/meetnosh/Nosh/index.vue")
     },
 ]
 
