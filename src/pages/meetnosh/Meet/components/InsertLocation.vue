@@ -1,9 +1,16 @@
 <script setup>
 import { VBtn, VTextField } from 'vuetify/components';
 import ref from 'vue';
+import ModalMap from './ModalMap.vue';
 
-const selectedLocation = ref(null);
+const selectedLocation = ref(null); // 사용자가 선택한 위치
+const isModalOpen = ref(false); // 모달 개폐여부
+const center = ref([37.5665, 126.9780]); // 지도 초기 중심 좌표, 우리나라 서울로 지정
 
+const handleConfirmLocation = (location) => {
+    selectedLocation.value = location; // ModalMap.vue에서 위치를 받아와 selectedLocation에 저장
+    isModalOpen.value = false;
+}
 
 </script>
 
@@ -23,21 +30,12 @@ const selectedLocation = ref(null);
                 {{ selectedLocation.lat }} {{ selectedLocation.lng }}
             </span>
         </VCol>
-    </VRow>
-    <!--모달창-->
-    <div v-if="isModalOpen" class="modal">
-        <l-map
-            style="height: 400px; width: 80%"
-            :zoom="13"
+        <!-- ModalMap 컴포넌트 렌더링 -->
+        <ModalMap
+            :isOpen="isModalOpen"
             :center="center"
-            @click="onMapClick"
-        >
-            <l-title-layer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            ></l-title-layer>
-            <l-marker :lat-lng="selectedLocation"></l-marker>
-            <VBtn @click="confirmLocation">확인</VBtn>
-            <VBtn @click="isModalOpen = false">취소</VBtn>
-        </l-map>
-    </div>
+            @close="isModalOpen=false"
+            @confirm="handleConfirmLocation"
+        /> <!--isOpen과 center를 props로 전달 / @close면 모달 닫기 @comfirm이면 위치 선택-->
+    </VRow>
 </template>
