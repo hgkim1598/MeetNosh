@@ -1,4 +1,6 @@
 <script setup>
+import InsertLocation from './components/InsertLocation.vue'
+import ModalMap from './components/ModalMap.vue'
 
 </script>
 
