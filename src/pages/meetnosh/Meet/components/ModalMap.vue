@@ -1,7 +1,7 @@
 <script setup>
 import {ref, defineProps, defineEmits} from 'vue';
 import {LMap, LTileLayer, LMarker} from "vue3-leaflet";
-import "leaflet/disht/leaflet.css"; // 지도에 적용할 스타일
+import "leaflet/dist/leaflet.css"; // 지도에 적용할 스타일
 
 /** 부모 컴포넌트에서 전달되는 props, emit 이벤트 설정 */
 const props = defineProps({
