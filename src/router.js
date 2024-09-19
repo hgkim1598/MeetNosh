@@ -18,11 +18,19 @@ const routes = [
         component: () => import("@/pages/meetnosh/Nosh/index.vue"),
         meta: {title: '맛집 찾기:MN'}
     },
-]
+];
+
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
-})
+  });
+  
+  // 페이지 이동 시 제목 업데이트
+  router.afterEach((to) => {
+    if (to.meta.title) {
+      document.title = to.meta.title;
+    }
+  });
 
 export default router
