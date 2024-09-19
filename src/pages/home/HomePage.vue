@@ -8,12 +8,11 @@
     </div>
     <VCard>
         <VCardText>
-            
             <div class="align-center">
                 <VBtn
                     variant="text"
                     size="large">
-                    
+                    버튼
                 </VBtn>
             </div>
         </VCardText>
