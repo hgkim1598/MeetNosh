@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <div class="align-center">
+    <div class="align-center div-color">
         <h1>MeetNosh</h1>
     </div>
-    <VCard>
+    <VCard class="div-color">
         <VCardText>
             <div class="align-center">
                 <VBtn
@@ -18,3 +18,9 @@
         </VCardText>
     </VCard>
 </template>
+
+<style lang="css" scoped>
+.div-color{
+    background-color: rebeccapurple;
+}
+</style>
