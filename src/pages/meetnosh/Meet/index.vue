@@ -9,6 +9,8 @@ import ModalMap from './components/ModalMap.vue'
         <VCardText>
             <VRow>
                 <VCol cols="12">
+                    <InsertLocation />
+                    <ModalMap />
                     
                 </VCol>
             </VRow>
