@@ -10,7 +10,7 @@
 <style scoped>
 .header {
   height: 60px; /* 헤더 높이 */
-  background-color: #bf94f8; /* 메인 색상 */
+  background-color: #f2e7ff; /* 메인 색상 */
   color: white;
   display: flex;
   align-items: center;
