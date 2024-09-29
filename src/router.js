@@ -9,15 +9,27 @@ const routes = [
     {
         path: '/meet',
         name: 'Meet',
-        component: () => import("@/pages/meetnosh/Meet/index.vue"),
+        component: () => import("@/pages/Meet/index.vue"),
         meta: {title: '장소 정하기:MN'}
     },
     {
         path: '/nosh',
         name: 'Nosh',
-        component: () => import("@/pages/meetnosh/Nosh/index.vue"),
+        component: () => import("@/pages/Nosh/index.vue"),
         meta: {title: '맛집 찾기:MN'}
     },
+    {
+      path: '/mpas',
+      name: 'maps',
+      component: () => import("@/pages/Maps/index.vue"),
+      meta: {title: '주소록:MN'}
+  },
+  {
+    path: '/mypage',
+    name: 'Nosh',
+    component: () => import("@/pages/MyPage/index.vue"),
+    meta: {title: '마이페이지:MN'}
+},
 ];
 
 
