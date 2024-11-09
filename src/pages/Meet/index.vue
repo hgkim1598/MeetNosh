@@ -1,11 +1,12 @@
 <script setup>
-import InsertLocation from './components/InsertLocation.vue'
-import ModalMap from './components/ModalMap.vue'
+// import InsertLocation from './components/InsertLocation.vue'
+// import ModalMap from './components/ModalMap.vue'
 
 </script>
 
 <template>
-    <VCard>
+만남
+    <!-- <VCard>
         <VCardText>
             <VRow>
                 <VCol cols="12">
@@ -15,5 +16,5 @@ import ModalMap from './components/ModalMap.vue'
                 </VCol>
             </VRow>
         </VCardText>
-    </VCard>
+    </VCard> -->
 </template>

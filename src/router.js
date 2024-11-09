@@ -19,14 +19,14 @@ const routes = [
         meta: {title: '맛집 찾기:MN'}
     },
     {
-      path: '/mpas',
+      path: '/maps',
       name: 'maps',
       component: () => import("@/pages/Maps/index.vue"),
       meta: {title: '주소록:MN'}
   },
   {
     path: '/mypage',
-    name: 'Nosh',
+    name: 'Mypage',
     component: () => import("@/pages/MyPage/index.vue"),
     meta: {title: '마이페이지:MN'}
 },

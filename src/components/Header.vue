@@ -7,7 +7,7 @@
   
   <nav class="nav-bar">
     <ul>
-      <li><router-link to="/home">Hoem</router-link></li>
+      <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/meet">Meet</router-link></li>
       <li><router-link to="/nosh">Nosh</router-link></li>
       <li><router-link to="/maps">Mpas</router-link></li>
